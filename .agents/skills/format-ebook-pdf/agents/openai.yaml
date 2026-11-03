@@ -1,0 +1,4 @@
+interface:
+  display_name: "Format Ebook PDF"
+  short_description: "Repair ebook typography, tables, and PDF pagination"
+  default_prompt: "Use $format-ebook-pdf to improve this ebook PDF while preserving its content and checking the rendered result."
