@@ -1,0 +1,18 @@
+{
+  "name": "obsidian-nord-preview",
+  "displayName": "Obsidian Nord Markdown Colors",
+  "description": "Obsidian Nord heading, bold, and italic colors for Markdown previews.",
+  "version": "1.0.0",
+  "publisher": "tkk-local",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "markdown.previewStyles": [
+      "./nord.css"
+    ]
+  }
+}

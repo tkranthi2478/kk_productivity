@@ -1,0 +1,29 @@
+/* Obsidian Nord text colors for the VS Code Markdown preview. */
+/* Keep the current font family, layout, background, tables, and code styling. */
+
+body.vscode-dark .markdown-body,
+body.vscode-high-contrast .markdown-body {
+  --nord-emphasis: #ebcb8b;
+}
+
+body.vscode-light .markdown-body,
+body.vscode-high-contrast-light .markdown-body {
+  --nord-emphasis: #a3be8c;
+}
+
+body .markdown-body h1 { color: #bf616a !important; }
+body .markdown-body h2 { color: #ebcb8b !important; }
+body .markdown-body h3 { color: #a3be8c !important; }
+body .markdown-body h4 { color: #b48ead !important; }
+body .markdown-body h5 { color: #8fbcbb !important; }
+body .markdown-body h6 { color: #81a1c1 !important; }
+
+body .markdown-body strong,
+body .markdown-body b {
+  color: var(--nord-emphasis) !important;
+}
+
+body .markdown-body em,
+body .markdown-body i {
+  color: var(--nord-emphasis) !important;
+}
