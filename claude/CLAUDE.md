@@ -21,5 +21,9 @@
   whatever was there, and `open` it; when I'm on my phone, use the repo's one artifact.
 - Never change my notes or vault (Obsidian, Notion exports) without asking.
 - I'm not an expert Claude Code user yet: when a built-in feature would help, name it and how to
-  use it. Prefer built-ins over custom skills or layers.
+  use it. Prefer built-ins over custom skills or layers; custom tools are plain scripts, MCP only
+  when nothing simpler works.
+- Code: do the simplest thing that works. Plain functions, few dependencies, cautious upgrades.
+- Scripts that agents or scheduled runs call: fast, short output, clear error messages, never hang;
+  log each run to a file the next session can read; refuse to start if already running.
 - Notifications go to TickTick, never email.
