@@ -20,7 +20,6 @@ Re-run after adding a skill or hook.
                          ~/.claude/skills and ~/.codex/skills
 claude/hooks/            Claude Code hook scripts, linked into ~/.claude/hooks
                          (wired up in ~/.claude/settings.json)
-claude/output-styles/    Claude Code output styles, linked into ~/.claude/output-styles
 vscode/                  VS Code extensions and tweaks
 project-skills/<name>/   skills for one kind of job, never linked globally;
                          ./install.sh --project DIR NAME turns one on in DIR
@@ -45,12 +44,6 @@ Not loaded everywhere. Turn one on in a project with
 
 - [tab-title.sh](claude/hooks/tab-title.sh): Terminal tab shows 🟢 idle, ⏳ working,
   🔔 needs attention for each Claude session.
-
-## Output styles
-
-- [Attention-first](claude/output-styles/attention-first.md): replies lead with what
-  needs you, then the result, then what changed, then problems. Turn on with
-  `/output-style`.
 
 ## Editor
 
