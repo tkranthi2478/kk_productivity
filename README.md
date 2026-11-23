@@ -18,6 +18,7 @@ Re-run after adding a skill or hook.
 ```
 .agents/skills/<name>/   skills (SKILL.md + scripts/references), linked into
                          ~/.claude/skills and ~/.codex/skills
+design/artifact-layout.md  shared layout every artifact follows (linked from claude/CLAUDE.md)
 claude/CLAUDE.md         personal instructions loaded in every project, linked to ~/.claude/CLAUDE.md
 claude/hooks/            Claude Code hook scripts, linked into ~/.claude/hooks
                          (wired up in ~/.claude/settings.json)
