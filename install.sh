@@ -1,10 +1,11 @@
 #!/bin/bash
 # Link this repo's skills and hooks into Claude Code and Codex.
 # Safe to re-run. Never overwrites a real file or folder; it reports it instead.
-# Usage: ./install.sh [--dry-run]
+# Usage: ./install.sh [--dry-run]                      global skills and hooks
+#        ./install.sh [--dry-run] --project DIR NAME   turn on project-skills/NAME in one project only
 set -u
 repo="$(cd "$(dirname "$0")" && pwd)"
-dry=0; [ "${1:-}" = "--dry-run" ] && dry=1
+dry=0; [ "${1:-}" = "--dry-run" ] && { dry=1; shift; }
 
 link() {  # link <source> <target>
   src="$1"; dst="$2"
@@ -17,6 +18,15 @@ link() {  # link <source> <target>
   echo "link     $dst -> $src"
   [ $dry = 1 ] || { mkdir -p "$(dirname "$dst")"; ln -sfn "$src" "$dst"; }
 }
+
+if [ "${1:-}" = "--project" ]; then
+  dir="${2:?project folder}"; name="${3:?skill name}"; src="$repo/project-skills/$name"
+  [ -d "$src" ] || { echo "No project skill named $name in $repo/project-skills"; exit 1; }
+  dir="$(cd "$dir" && pwd)"
+  link "$src" "$dir/.claude/skills/$name"   # Claude Code
+  link "$src" "$dir/.agents/skills/$name"   # Codex
+  exit 0
+fi
 
 for skill in "$repo"/.agents/skills/*/; do
   name="$(basename "$skill")"

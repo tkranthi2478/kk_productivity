@@ -21,16 +21,24 @@ Re-run after adding a skill or hook.
 claude/hooks/            Claude Code hook scripts, linked into ~/.claude/hooks
                          (wired up in ~/.claude/settings.json)
 vscode/                  VS Code extensions and tweaks
+project-skills/<name>/   skills for one kind of job, never linked globally;
+                         ./install.sh --project DIR NAME turns one on in DIR
 install.sh               the linker
 ```
 
 ## Skills
 
-- [Format Ebook PDF](.agents/skills/format-ebook-pdf/SKILL.md): repair ebook
-  typography, margins, paragraph spacing, table visibility, citation formatting,
-  and pagination; verify the rendered PDF against its structured source.
 - [YouTube Transcript](.agents/skills/yt-transcript/SKILL.md): download only a
   video's captions and write a clean, timestamped transcript with chapters.
+
+## Project skills
+
+Not loaded everywhere. Turn one on in a project with
+`./install.sh --project <folder> <name>`.
+
+- [Format Ebook PDF](project-skills/format-ebook-pdf/SKILL.md): repair ebook
+  typography, margins, paragraph spacing, table visibility, citation formatting,
+  and pagination; verify the rendered PDF against its structured source.
 
 ## Hooks
 
