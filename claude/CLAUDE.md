@@ -14,12 +14,11 @@
   `~/Developer/kk_productivity/design/artifact-layout.md` (shared tokens, phone layout, folding items).
   Long answers and design docs don't use it: Claude's default design, no phone rules; design docs
   are desktop layouts.
-- Large information (reports, research, comparisons, long explanations; roughly more than a screen):
-  put it on a plain, readable page and give a 2-3 line summary in chat. At the Mac, use a local
-  `<repo>/.answers/index.html` (globally gitignored) and `open` it; when I'm on my phone, use the repo's
-  one artifact. Reuse the same page each time: newest on top, older ones folded.
-  On long tasks, write that page before verifying: a short executive summary of what changed and
-  why, so I can review without reading the code.
+- When a single answer is long and needs focused reading (a report, research, a comparison) and the
+  terminal is the wrong place to read it, put that one answer on a plain, readable HTML page and give a
+  2-3 line summary in chat. Only for that answer: never a log or summary of the session, and not for
+  normal replies. At the Mac, write `<repo>/.answers/index.html` (globally gitignored), replacing
+  whatever was there, and `open` it; when I'm on my phone, use the repo's one artifact.
 - Never change my notes or vault (Obsidian, Notion exports) without asking.
 - I'm not an expert Claude Code user yet: when a built-in feature would help, name it and how to
   use it. Prefer built-ins over custom skills or layers.
