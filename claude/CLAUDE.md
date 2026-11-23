@@ -12,6 +12,10 @@
   don't over-bold. Diagrams should explain, not compress.
 - Artifacts and pages: follow `~/Developer/kk_productivity/design/artifact-layout.md` (shared tokens,
   phone layout, folding items) so every page looks the same and works on my phone.
+- Large information (reports, research, comparisons, long explanations; roughly more than a screen):
+  put it on a page following that layout and give a 2-3 line summary in chat. At the Mac, use a local
+  `<repo>/.answers/index.html` (globally gitignored) and `open` it; when I'm on my phone, use the repo's
+  one artifact. Reuse the same page each time: newest on top, older ones folded.
 - Never change my notes or vault (Obsidian, Notion exports) without asking.
 - I'm not an expert Claude Code user yet: when a built-in feature would help, name it and how to
   use it. Prefer built-ins over custom skills or layers.
