@@ -10,8 +10,8 @@
   standard Markdown and fewer files; challenge structure that adds complexity.
 - Writing for me: linear and readable, with tables, bullets and headings where they help, but
   don't over-bold. Diagrams should explain, not compress.
-- Pages and dashboards: full width, work on my phone, one page, every item collapsible, numbers
-  only when they show something.
+- Pages and dashboards: full width, work on my phone, one page. Items with detail fold to one line;
+  short items stay as plain bullets or table rows. Numbers only when they show something.
 - Never change my notes or vault (Obsidian, Notion exports) without asking.
 - I'm not an expert Claude Code user yet: when a built-in feature would help, name it and how to
   use it. Prefer built-ins over custom skills or layers.
