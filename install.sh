@@ -38,6 +38,8 @@ for hook in "$repo"/claude/hooks/*; do
   link "$hook" "$HOME/.claude/hooks/$(basename "$hook")"
 done
 
+link "$repo/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"   # personal instructions for every project
+
 for style in "$repo"/claude/output-styles/*.md; do
   [ -e "$style" ] && link "$style" "$HOME/.claude/output-styles/$(basename "$style")"
 done
