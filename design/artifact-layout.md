@@ -1,7 +1,7 @@
-# Artifact layout (all my pages)
+# Artifact layout (phone artifacts)
 
-Every artifact (dashboard, tracker, explainer) uses this so they look and behave the same,
-especially on a phone. Reference implementation: AI Skill Newsletter
+Artifacts I open on my phone (dashboards, trackers, workflow pages) use this so they look and
+behave the same. Not for long answers (`.answers/`) or design docs: those use Claude's default design. Reference implementation: AI Skill Newsletter
 (`~/Developer/kk_ai_skilling/newsletter/page.html`).
 
 ## Rules

@@ -10,8 +10,16 @@
   standard Markdown and fewer files; challenge structure that adds complexity.
 - Writing for me: linear and readable, with tables, bullets and headings where they help, but
   don't over-bold. Diagrams should explain, not compress.
-- Artifacts and pages: follow `~/Developer/kk_productivity/design/artifact-layout.md` (shared tokens,
-  phone layout, folding items) so every page looks the same and works on my phone.
+- Artifacts I view on my phone (dashboards, workflow pages): follow
+  `~/Developer/kk_productivity/design/artifact-layout.md` (shared tokens, phone layout, folding items).
+  Long answers and design docs don't use it: Claude's default design, no phone rules; design docs
+  are desktop layouts.
+- Large information (reports, research, comparisons, long explanations; roughly more than a screen):
+  put it on a plain, readable page and give a 2-3 line summary in chat. At the Mac, use a local
+  `<repo>/.answers/index.html` (globally gitignored) and `open` it; when I'm on my phone, use the repo's
+  one artifact. Reuse the same page each time: newest on top, older ones folded.
+  On long tasks, write that page before verifying: a short executive summary of what changed and
+  why, so I can review without reading the code.
 - Never change my notes or vault (Obsidian, Notion exports) without asking.
 - I'm not an expert Claude Code user yet: when a built-in feature would help, name it and how to
   use it. Prefer built-ins over custom skills or layers.
